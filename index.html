@@ -2,50 +2,233 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Matemáticas fáciles</title>
+  <title>Matemáticas fáciles | Aprende paso a paso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Conexión al archivo de estilos -->
+  <meta name="description" content="Aprende matemáticas paso a paso: aritmética, fracciones, álgebra y geometría con ejemplos, fórmulas y ejercicios.">
+  <meta property="og:title" content="Matemáticas fáciles | Aprende paso a paso">
+  <meta property="og:description" content="Aritmética, fracciones, álgebra y geometría con ejemplos y ejercicios.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
+  <!-- Tipografía moderna (opcional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <!-- MathJax para fórmulas -->
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <header>
-    <h1>📘 Matemáticas fáciles</h1>
-    <nav>
-      <a href="#sumas">Sumas</a>
-      <a href="#fracciones">Fracciones</a>
-      <a href="#algebra">Álgebra</a>
-    </nav>
+  <!-- Barra de navegación -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#">📘 Matemáticas fáciles</a>
+      <nav aria-label="Navegación principal">
+        <a href="#curriculo">Currículo</a>
+        <a href="#leccion">Lección</a>
+        <a href="#ejercicios">Ejercicios</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="sumas">
-    <h2>➕ Sumas</h2>
-    <div class="card">
-      <p>La <strong>suma</strong> combina dos números para obtener un resultado.</p>
-      <p>Ejemplo: \( 3 + 5 = 8 \)</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Aprende matemáticas sin complicarte</h1>
+      <p class="lead">
+        Conceptos claros, ejemplos prácticos y ejercicios corregidos. Desde sumas y fracciones hasta álgebra y geometría.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#curriculo">Empezar ahora</a>
+        <a class="btn" href="#leccion">Ver una lección</a>
+      </div>
+      <div class="stats">
+        <div><strong>+30</strong><span>temas clave</span></div>
+        <div><strong>Ejemplos</strong><span>con LaTeX/MathJax</span></div>
+        <div><strong>Gratis</strong><span>y sin anuncios invasivos</span></div>
+      </div>
     </div>
   </section>
 
-  <section id="fracciones">
-    <h2>➗ Fracciones</h2>
-    <div class="card">
-      <p>Una <strong>fracción</strong> representa una parte de un entero.</p>
-      <p>Ejemplo: \( \tfrac{1}{2} + \tfrac{1}{4} = \tfrac{3}{4} \).</p>
+  <!-- Currículo / Temas -->
+  <section id="curriculo" class="section">
+    <div class="container">
+      <h2>Currículo</h2>
+      <p class="muted">Recorre los temas en orden sugerido o salta a lo que necesites.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Sumas</h3>
+          <p>La suma combina cantidades: \(3 + 5 = 8\). Propiedad conmutativa: \(a+b=b+a\).</p>
+          <a class="link" href="#">Ir a Sumas →</a>
+        </article>
+        <article class="card">
+          <h3>Restas</h3>
+          <p>Quitar o comparar: \(9 - 4 = 5\). Relación con suma: \(a-b = a + (-b)\).</p>
+          <a class="link" href="#">Ir a Restas →</a>
+        </article>
+        <article class="card">
+          <h3>Multiplicación</h3>
+          <p>Suma repetida: \(4 \times 3 = 12\). Propiedad distributiva: \(a(b+c)=ab+ac\).</p>
+          <a class="link" href="#">Ir a Multiplicación →</a>
+        </article>
+        <article class="card">
+          <h3>División</h3>
+          <p>Reparto equitativo: \(12 \div 3 = 4\). Relación con multiplicación.</p>
+          <a class="link" href="#">Ir a División →</a>
+        </article>
+        <article class="card">
+          <h3>Fracciones</h3>
+          <p>Partes de un entero: \(\tfrac{1}{2} + \tfrac{1}{4}=\tfrac{3}{4}\). Equivalencias y simplificación.</p>
+          <a class="link" href="#">Ir a Fracciones →</a>
+        </article>
+        <article class="card">
+          <h3>Potencias y raíces</h3>
+          <p>\(a^m \cdot a^n = a^{m+n}\). Raíz cuadrada: \(\sqrt{a}\cdot\sqrt{b}=\sqrt{ab}\).</p>
+          <a class="link" href="#">Ir a Potencias →</a>
+        </article>
+        <article class="card">
+          <h3>Álgebra</h3>
+          <p>Resolver \(2x+6=10 \Rightarrow x=2\). Ecuaciones lineales y sistemas básicos.</p>
+          <a class="link" href="#">Ir a Álgebra →</a>
+        </article>
+        <article class="card">
+          <h3>Geometría</h3>
+          <p>Perímetro y área: rectángulo \(A=ab\); triángulo \(A=\tfrac{bh}{2}\).</p>
+          <a class="link" href="#">Ir a Geometría →</a>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="algebra">
-    <h2>🔢 Álgebra</h2>
-    <div class="card">
-      <p>Ejemplo: resolver \( 2x + 6 = 10 \)</p>
-      <p>\( 2x = 4 \Rightarrow x = 2 \)</p>
+  <!-- Lección destacada -->
+  <section id="leccion" class="section alt">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <h2>Lección: Suma de fracciones con distinto denominador</h2>
+          <p>Para sumar \(\frac{a}{b} + \frac{c}{d}\), usa un denominador común \(bd\):</p>
+          <p class="formula">
+            \[
+              \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}
+            \]
+          </p>
+          <p>Ejemplo: \(\tfrac{2}{3} + \tfrac{1}{4} = \tfrac{8+3}{12}=\tfrac{11}{12}\).</p>
+          <ul class="steps">
+            <li>Encuentra el común denominador.</li>
+            <li>Equivale cada fracción al nuevo denominador.</li>
+            <li>Suma numeradores, conserva denominador.</li>
+            <li>Simplifica si es posible.</li>
+          </ul>
+        </div>
+        <aside class="aside">
+          <h3>Tips rápidos</h3>
+          <ul>
+            <li>Prefiere el <em>mínimo común múltiplo</em> de los denominadores.</li>
+            <li>Chequea con decimales para validar tu resultado.</li>
+            <li>Practica con números pequeños primero.</li>
+          </ul>
+          <a class="btn btn--secondary" href="#ejercicios">Practicar ahora</a>
+        </aside>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Mi Sitio de Matemáticas | Hecho con 💙 y GitHub Pages</p>
+  <!-- Ejercicios rápidos -->
+  <section id="ejercicios" class="section">
+    <div class="container">
+      <h2>Ejercicios rápidos</h2>
+      <div class="grid grid--tight">
+        <article class="card">
+          <h4>Aritmética</h4>
+          <ol>
+            <li>\(38 + 47 = \ ?\)</li>
+            <li>\(96 - 39 = \ ?\)</li>
+            <li>\(7 \times 8 = \ ?\)</li>
+            <li>\(72 \div 9 = \ ?\)</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h4>Fracciones</h4>
+          <ol>
+            <li>\(\tfrac{3}{5} + \tfrac{2}{5} = \ ?\)</li>
+            <li>\(\tfrac{4}{7} - \tfrac{1}{7} = \ ?\)</li>
+            <li>\(\tfrac{2}{3} + \tfrac{3}{4} = \ ?\)</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h4>Álgebra</h4>
+          <ol>
+            <li>Resuelve: \(3x + 7 = 22\)</li>
+            <li>Resuelve: \(5y - 2 = 18\)</li>
+            <li>Factoriza: \(x^2 - 9\)</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h4>Geometría</h4>
+          <ol>
+            <li>Área de un triángulo de base \(10\) y altura \(7\).</li>
+            <li>Perímetro de un rectángulo de lados \(6\) y \(4\).</li>
+            <li>Radio si \(A=\pi r^2=50\pi\).</li>
+          </ol>
+        </article>
+      </div>
+      <p class="muted small">Sugerencia: crea una página <code>respuestas.html</code> con soluciones paso a paso.</p>
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos" class="section alt">
+    <div class="container">
+      <h2>Recursos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fórmulas clave</h3>
+          <p>Álgebra: \( (a+b)^2=a^2+2ab+b^2 \), \( (a-b)^2=a^2-2ab+b^2 \).</p>
+        </article>
+        <article class="card">
+          <h3>Tabla útil</h3>
+          <table class="table">
+            <thead><tr><th>Operación</th><th>Ejemplo</th><th>Resultado</th></tr></thead>
+            <tbody>
+              <tr><td>Suma</td><td>\(12+9\)</td><td>\(21\)</td></tr>
+              <tr><td>Producto</td><td>\(6\cdot 7\)</td><td>\(42\)</td></tr>
+              <tr><td>Potencia</td><td>\(2^5\)</td><td>\(32\)</td></tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="card">
+          <h3>Cómo usar el sitio</h3>
+          <p>Lee el tema, revisa el ejemplo, intenta los ejercicios, compara con soluciones.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Matemáticas fáciles</strong><br>
+        © <span id="year"></span> • Hecho con 💙 y GitHub Pages
+      </div>
+      <nav aria-label="Enlaces de pie">
+        <a href="#curriculo">Currículo</a>
+        <a href="#leccion">Lección</a>
+        <a href="#ejercicios">Ejercicios</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Encabezado pegajoso al hacer scroll (sombra)
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 4);
+    });
+  </script>
 </body>
 </html>

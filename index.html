@@ -4,54 +4,8 @@
   <meta charset="utf-8">
   <title>Matemáticas fáciles</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Estilos básicos -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #38bdf8;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover { text-decoration: underline; }
-    section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #0f172a;
-      border-bottom: 2px solid #38bdf8;
-      padding-bottom: 5px;
-    }
-    .card {
-      background: white;
-      border: 1px solid #e2e8f0;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #0f172a;
-      color: #94a3b8;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <!-- Conexión al archivo de estilos -->
+  <link rel="stylesheet" href="styles.css">
   <!-- MathJax para fórmulas -->
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -69,32 +23,24 @@
   <section id="sumas">
     <h2>➕ Sumas</h2>
     <div class="card">
-      <p>La <strong>suma</strong> es una operación matemática básica que combina dos números para obtener un resultado.</p>
+      <p>La <strong>suma</strong> combina dos números para obtener un resultado.</p>
       <p>Ejemplo: \( 3 + 5 = 8 \)</p>
-      <p>Propiedad conmutativa: \( a + b = b + a \)</p>
     </div>
   </section>
 
   <section id="fracciones">
     <h2>➗ Fracciones</h2>
     <div class="card">
-      <p>Una <strong>fracción</strong> representa una parte de un todo.</p>
-      <p>Ejemplo: medio se representa como \( \tfrac{1}{2} \).</p>
-      <p>Sumar fracciones:  
-        \( \tfrac{1}{2} + \tfrac{1}{4} = \tfrac{3}{4} \).
-      </p>
+      <p>Una <strong>fracción</strong> representa una parte de un entero.</p>
+      <p>Ejemplo: \( \tfrac{1}{2} + \tfrac{1}{4} = \tfrac{3}{4} \).</p>
     </div>
   </section>
 
   <section id="algebra">
     <h2>🔢 Álgebra</h2>
     <div class="card">
-      <p>El álgebra usa letras para representar números desconocidos.</p>
-      <p>Ejemplo: Resolver la ecuación  
-        \( 2x + 6 = 10 \)  
-        \( 2x = 4 \)  
-        \( x = 2 \).
-      </p>
+      <p>Ejemplo: resolver \( 2x + 6 = 10 \)</p>
+      <p>\( 2x = 4 \Rightarrow x = 2 \)</p>
     </div>
   </section>
 

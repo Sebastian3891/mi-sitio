@@ -1,1 +1,59 @@
-holaaa
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #38bdf8;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #0f172a;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 5px;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Pie de página */
+footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
